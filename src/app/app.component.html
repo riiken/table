@@ -1,0 +1,62 @@
+<div>
+<header>
+  <h1>DETAILS</h1>
+</header>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        ENTER YOUR DETAILS HERE
+      </div>
+      <div class="card-body">
+        <label for="name" style=" font-weight: bold;">NAME:</label>
+        <input  type="text" autocomplete="off" #uname id="name">
+        <br><br>
+        <label for="age" style=" font-weight: bold;">AGE:</label>
+      <input style="margin-left: 12px;" autocomplete="off" type="number" #uage id="age">
+        <br><br>
+      <button (click)="adduser(uname,uage)" class="btn">ADD</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <table class="table" id="customers">
+      <thead class="thead-dark">
+        <h2 style="position: sticky;top: 10%; z-index: 1000; font-weight:bold; color: #AA7CB1">USERDETAILS</h2>
+        <tr>
+          <th scope="col" (click)="sortName('name')">NAME &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-up-circle-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg>&nbsp; &nbsp;&nbsp; &nbsp;<i class="bi bi-arrow-down-circle-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+          </svg></th>
+            <th scope="col" (click)="sortData()">AGE &nbsp;&nbsp;<i class="bi bi-arrow-up-circle-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>&nbsp; &nbsp;<i class="bi bi-arrow-down-circle-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg></th>
+            <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let obj of ulist; index as i">
+          <td>{{obj.name}}</td>
+          <td>{{obj.age}}</td>
+          <td><button (click)="delete(i)" style="background-color: dimgrey;">DELETE</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+    <ul>
+        <li class="menu ">Git hub App</li>
+        <li class="menu right">Your Copy Note</li>
+    </ul>
+
+</footer>
+</div>
+
+
+

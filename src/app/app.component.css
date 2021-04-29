@@ -1,0 +1,114 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 60px;
+    margin-top: 20%;
+  }
+  #customers td, #customers th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    
+    color: white;
+    
+  }
+  
+  /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
+  
+  #customers tr:hover {background-color:#636331;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    text-align: centre;
+    position: sticky;
+    top: 8%;
+    z-index: 1000;
+  }  
+
+  .card{
+      width: 50%;
+      background-color: black;
+      margin-top: 150px;
+      margin-left: 150px;
+      position: sticky;
+      top: 10%;
+      z-index: 1000;
+      border: 3px dotted dimgrey;
+  }
+  .card-header{
+      background-color: #12402F;
+      color: white;
+     
+      font-size: 15px;
+    
+  }
+  .card-body{
+      
+      background-color: thistle;
+  }
+
+  .btn{
+      background: teal;
+      color: white;
+      margin-left: 100px;
+  }
+
+  .menu{
+    list-style-type: none;
+    float: left;
+    padding: 1.2%;
+    cursor: pointer;
+}
+.right{
+    float: right;
+}
+footer{
+    width: 100%;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: teal;
+    font-size: 80%;
+    position: fixed;
+    bottom: 0%;
+    margin: 0%;
+}
+
+header{
+    width: 100%;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: teal;
+    font-size: 40px;
+    position: fixed;
+    top: 0%;
+    margin: 0%;
+    z-index: 1000;
+   
+}
+h1{
+    animation: blink 5sec infinite;
+
+    color:#C09858;
+    font-weight: bold;
+    
+}
+
+@keyframes blink{
+    0%{
+        color:#E8BD25 ;
+    }
+    50%{
+        color: #E73031;
+    }
+    100%{
+        color: #AA7CB1;
+    }
+   
+}
+svg{
+    cursor: pointer;
+}
