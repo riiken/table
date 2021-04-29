@@ -112,3 +112,14 @@ h1{
 svg{
     cursor: pointer;
 }
+
+@media screen and (max-width:600px){
+#customers{
+  width:100%;
+  max-width:100;
+  }
+  
+  .card{
+    max-width:100%;
+    width:100%;
+}
