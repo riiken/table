@@ -10,7 +10,7 @@ export class AppComponent {
 ulist=Array();
 data=Array();
 user:any;
-isDesc:any;
+isDesc:boolean=true;
 way:any;
 // 
 
